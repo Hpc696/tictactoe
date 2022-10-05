@@ -35,13 +35,19 @@ console.log("ora")
   const vincitore = Calcolovincitore(squares)
   let stato=0;
   if (vincitore===1) {
-    stato = <span className='h-auto w-auto d-table m-auto'> VINCITORE: <FontAwesomeIcon className='m-1' color='#0d6efd' icon={faXmark}/></span>
+    stato = <span className='h-auto w-auto d-table m-auto'> VINCITORE: <div className='d-flex justify-content-center m-4'>   
+    <FontAwesomeIcon className='m-1 fa-2x' color='#0d6efd' icon={faXmark}/>
+    </div></span>
   } else if (vincitore===2) {
-    stato = <span className='h-auto w-auto d-table m-auto'> VINCITORE: <FontAwesomeIcon className='m-1' color='#0d6efd' icon={faO}/></span>
+    stato = <span className='h-auto w-auto d-table m-auto'> VINCITORE: <div className='d-flex justify-content-center m-4'> 
+    <FontAwesomeIcon className='m-1 fa-2x' color='#0d6efd' icon={faO}/>
+    </div></span>
   } else if (cont===9){
     stato = <span className='h-auto w-auto d-table m-auto'> PAREGGIO </span>
   } else {
-    stato = <span className='h-auto w-auto d-table m-auto'>TOCCA A: <FontAwesomeIcon className='m-1' color='#0d6efd' icon={isX ? faXmark : faO}/> </span>
+    stato = <span className='h-auto w-auto d-table m-auto'>TOCCA A: <div className='d-flex justify-content-center m-4'>  
+    <FontAwesomeIcon className='m-1 fa-2x' color='#0d6efd' icon={isX ? faXmark : faO}/> 
+    </div></span>
   }
   
   return (
