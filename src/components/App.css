@@ -1,0 +1,20 @@
+html, body {
+  height: 100vh;
+  background-color: #F5F5F5;
+}
+.board {
+  width: 300px;
+  height: 100px;
+}
+.row-board{
+  width: 300px;
+  height: 100px;
+}
+.square{
+  height: 100px;
+  width: 100px;
+  border: solid 3px;
+}
+#root{
+  margin: 5%;
+}
