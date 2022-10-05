@@ -63,9 +63,9 @@ console.log("ora")
  
    let lista = []
    for(let row=0; row<3; row++){
-     let rowEL= (<div key={row} className='row-board'>
+     let rowEL= (<tr key={row} className='row-board'>
        {[0,1,2].map((col) => <Casella key={row*3+col} stato={squares[row*3+col]} onClick={() => Click(row*3+col)} /> )}
-     </div>)
+     </tr>)
      lista.push(rowEL)
    }
 
@@ -82,9 +82,9 @@ console.log("ora")
     <>
     <table className="board m-auto">
       <tbody>
-      <tr>
+      
         {lista}
-        </tr>
+      
         </tbody>
         </table>
     <div className="stato position-relative fs-2 fw-bold m-5">{Turnodi()}</div>
